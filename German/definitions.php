@@ -309,7 +309,7 @@ $definitions["Suspend member"] = "Suspend member";
 $definitions["Suspend members."] = "Suspend members.";
 $definitions["Suspend"] = "Suspend";
 
-$definitions["Uninstall"] = "Uninstall";
+$definitions["Uninstall"] = "Deinstallieren";
 $definitions["Unlock"] = "Unlock";
 $definitions["Unmute conversation"] = "Unmute conversation";
 $definitions["Unstarred"] = "Not following";
@@ -326,7 +326,7 @@ $definitions["Used to verify your account and subscribe to conversations"] = "Us
 $definitions["Username"] = "Username";
 
 $definitions["View %s's profile"] = "View %s's profile";
-$definitions["View all notifications"] = "View all notifications";
+$definitions["View all notifications"] = "Alle Benachrichtigungen anzeigen";
 $definitions["View more"] = "View more";
 $definitions["View your profile"] = "View your profile";
 $definitions["View"] = "View";
@@ -334,9 +334,9 @@ $definitions["Viewing: %s"] = "Viewing: %s";
 $definitions["viewingPosts"] = "<b>%s-%s</b> of %s posts";
 
 $definitions["Warning"] = "Uh oh, something's not right!";
-$definitions["Write a reply..."] = "Write a reply...";
+$definitions["Write a reply..."] = "Schreib eine Antwort...";
 
-$definitions["Yes"] = "Yes";
+$definitions["Yes"] = "Ja";
 $definitions["You can manage channel-specific permissions on the channels page."] = "You can manage channel-specific permissions on the channels page.";
 $definitions["Your current password"] = "Your current password";
 
@@ -464,23 +464,23 @@ $definitions["email.replyToStarred.subject"] = "There is a new reply to '%1\$s'"
 // These gambits are pretty much evaluated as-they-are.
 // tag:, author:, contributor:, and quoted: are combined with a value after the colon (:).
 // For example: tag:video games, author:myself
-$definitions["gambit.author:"] = "author:";
+$definitions["gambit.author:"] = "autor:";
 $definitions["gambit.contributor:"] = "contributor:";
-$definitions["gambit.member"] = "member";
+$definitions["gambit.member"] = "mitglied";
 $definitions["gambit.myself"] = "myself";
-$definitions["gambit.draft"] = "draft";
-$definitions["gambit.has attachments"] = "has attachments";
+$definitions["gambit.draft"] = "entwurf";
+$definitions["gambit.has attachments"] = "hat &auml;nh&auml;nge";
 $definitions["gambit.locked"] = "locked";
 $definitions["gambit.order by newest"] = "order by newest";
 $definitions["gambit.order by replies"] = "order by replies";
-$definitions["gambit.private"] = "private";
+$definitions["gambit.private"] = "privat";
 $definitions["gambit.random"] = "random";
 $definitions["gambit.reverse"] = "reverse";
 $definitions["gambit.starred"] = "followed";
 $definitions["gambit.muted"] = "muted";
 $definitions["gambit.sticky"] = "sticky";
-$definitions["gambit.unread"] = "unread";
-$definitions["gambit.more results"] = "more results";
+$definitions["gambit.unread"] = "ungelesen";
+$definitions["gambit.more results"] = "mehr Ergebnisse";
 
 // Aliases
 // These are gambits which tell the gambit system to use another gambit.
@@ -490,26 +490,26 @@ $definitions["gambit.more results"] = "more results";
 $definitions["gambit.active today"] = "active today"; // what appears in the gambit cloud
 $definitions["gambit.active 1 day"] = "active 1 day"; // what it actually evaluates to
 
-$definitions["gambit.has replies"] = "has replies";
-$definitions["gambit.has >0 replies"] = "has >0 replies";
-$definitions["gambit.has >10 replies"] = "has >10 replies";
+$definitions["gambit.has replies"] = "hat Antworten";
+$definitions["gambit.has >0 replies"] = "hat >0 Antworten";
+$definitions["gambit.has >10 replies"] = "hat >10 Antworten";
 
-$definitions["gambit.has no replies"] = "has no replies";
-$definitions["gambit.has 0 replies"] = "has 0 replies";
+$definitions["gambit.has no replies"] = "hat keine Antworten";
+$definitions["gambit.has 0 replies"] = "hat 0 Antworten";
 
-$definitions["gambit.dead"] = "dead";
+$definitions["gambit.dead"] = "tot";
 $definitions["gambit.active >30 day"] = "active >30 day";
 
 // Units of time
 // These are used in the active gambit.
 // ex. "[active] [>|<|>=|<=|last] 180 [second|minute|hour|day|week|month|year]"
-$definitions["gambit.second"] = "second";
+$definitions["gambit.second"] = "sekunde";
 $definitions["gambit.minute"] = "minute";
-$definitions["gambit.hour"] = "hour";
-$definitions["gambit.day"] = "day";
-$definitions["gambit.week"] = "week";
-$definitions["gambit.month"] = "month";
-$definitions["gambit.year"] = "year";
+$definitions["gambit.hour"] = "stunde";
+$definitions["gambit.day"] = "tag";
+$definitions["gambit.week"] = "woche";
+$definitions["gambit.month"] = "monat";
+$definitions["gambit.year"] = "jahr";
 $definitions["gambit.last"] = "last"; // as in "active last 180 days"
 $definitions["gambit.active"] = "active"; // as in "active last 180 days"
 
