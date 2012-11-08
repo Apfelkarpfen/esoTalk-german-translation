@@ -1,5 +1,5 @@
 <?php
-// Copyright 2011 mic
+// Copyright 2012 mic
 
 ET::$languageInfo["German"] = array(
 	"locale" => "de-DE",
