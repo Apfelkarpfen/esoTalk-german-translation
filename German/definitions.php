@@ -6,8 +6,7 @@ ET::$languageInfo["German"] = array(
 	"name" => "German",
 	"description" => "A casual German language pack.",
 	"version" => ESOTALK_VERSION,
-	"author" => "mic",
-	"authorEmail" => "mic@aachen.ccc.de",
+	"author" => "Micha Bartholome",
 	"license" => "GPLv3"
 );
 
@@ -38,7 +37,7 @@ $definitions["%s changed %s's group to %s."] = "%s changed %s's group to %s.";
 $definitions["%s changed your group to %s."] = "%s changed your group to %s.";
 $definitions["%s conversation"] = "%s Konversation";
 $definitions["%s conversations"] = "%s Konversationen";
-$definitions["%s invited you to %s."] = "%s invited you to %s.";
+$definitions["%s invited you to %s."] = "%s hat Dich eingeladen zu %s.";
 $definitions["%s joined the forum."] = "%s ist dem Forum beigetreten.";
 $definitions["%s post"] = "%s Beitrag";
 $definitions["%s posted %s"] = "%s posted %s";
@@ -309,20 +308,20 @@ $definitions["Suspend members."] = "Suspendierte Mitglieder.";
 $definitions["Suspend"] = "Suspendiert";
 
 $definitions["Uninstall"] = "Deinstallieren";
-$definitions["Unlock"] = "Unlock";
+$definitions["Unlock"] = "Entsperren";
 $definitions["Unmute conversation"] = "Unmute conversation";
 $definitions["Unstarred"] = "Not following";
 $definitions["Unsticky"] = "Unsticky";
 $definitions["Unsubscribe new users by default"] = "Unsubscribe new users by default";
 $definitions["Unsubscribed"] = "Unsubscribed";
-$definitions["Unsuspend member"] = "Unsuspend member";
-$definitions["Unsuspend"] = "Unsuspend";
-$definitions["Untitled conversation"] = "Untitled conversation";
-$definitions["Upgrade esoTalk"] = "Upgrade esoTalk";
+$definitions["Unsuspend member"] = "Mitglied desuspendieren";
+$definitions["Unsuspend"] = "Desuspendieren";
+$definitions["Untitled conversation"] = "Unbenannte Konversation";
+$definitions["Upgrade esoTalk"] = "esoTalk upgraden";
 $definitions["Use for mobile"] = "Use for mobile";
-$definitions["Use friendly URLs"] = "Use friendly URLs";
+$definitions["Use friendly URLs"] = "Benutzerfreundliche URLs verwenden";
 $definitions["Used to verify your account and subscribe to conversations"] = "Used to verify your account and subscribe to conversations";
-$definitions["Username"] = "Username";
+$definitions["Username"] = "Nutzername";
 
 $definitions["View %s's profile"] = "View %s's profile";
 $definitions["View all notifications"] = "Alle Benachrichtigungen anzeigen";
