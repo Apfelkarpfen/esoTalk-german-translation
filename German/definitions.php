@@ -1,5 +1,5 @@
 <?php
-// Copyright 2012 mic
+// Copyright 2012 Micha Bartholome
 
 ET::$languageInfo["German"] = array(
 	"locale" => "de-DE",
@@ -244,8 +244,8 @@ $definitions["Online"] = "Online";
 $definitions["online"] = "online";
 $definitions["Open registration"] = "Open registration";
 $definitions["optional"] = "optional";
-$definitions["Order By:"] = "Order By:";
-$definitions["Original Post"] = "Ursprünglicher Beitrag";
+$definitions["Order By:"] = "Sortieren nach:";
+$definitions["Original Post"] = "Urspr&uuml;nglicher Beitrag";
 
 $definitions["Page Not Found"] = "Seite nicht gefunden";
 $definitions["Password"] = "Passwort";
@@ -255,7 +255,7 @@ $definitions["Post a Reply"] = "Schreibe eine Antwort";
 $definitions["Post count"] = "Post count";
 $definitions["Posts"] = "Beitr&auml;ge";
 $definitions["Preview"] = "Vorschau";
-$definitions["Previous"] = "Previous";
+$definitions["Previous"] = "Vorherige";
 
 $definitions["quote"] = "zitieren";
 
@@ -266,7 +266,7 @@ $definitions["Registration"] = "Registrierung";
 $definitions["Remove avatar"] = "Avatar entfernen";
 $definitions["Rename Member"] = "Rename Member";
 $definitions["Reply"] = "Antworten";
-$definitions["Report a bug"] = "Report a bug";
+$definitions["Report a bug"] = "Einen Fehler melden";
 $definitions["Require users to confirm their email address"] = "Require users to confirm their email address";
 $definitions["restore"] = "wiederherstellen";
 
@@ -287,8 +287,8 @@ $definitions["Skins"] = "Skins";
 $definitions["Specify Setup Information"] = "Specify Setup Information";
 $definitions["Star to receive notifications"] = "Follow to receive notifications";
 $definitions["Starred"] = "Following";
-$definitions["Start a conversation"] = "Start a conversation";
-$definitions["Start a private conversation with %s"] = "Start a private conversation with %s";
+$definitions["Start a conversation"] = "Starte eine Konversation";
+$definitions["Start a private conversation with %s"] = "Starte eine private Konversation mit %s";
 $definitions["Start Conversation"] = "Start Conversation";
 $definitions["Starting a conversation"] = "Starting a conversation";
 $definitions["Statistics"] = "Statistiken";
@@ -340,7 +340,7 @@ $definitions["Your current password"] = "Dein jetziges Passwort";
 
 
 // Messages.
-$definitions["message.404"] = "Oh dear - the page you requested could not be found! Try going back and clicking a different link. Or something else.";
+$definitions["message.404"] = "Oh je - die von Ihnen angeforderte Seite konnte nicht gefunden werden! Versuchen Sie auf der vorherigen und auf einen anderen Link zu klicken. Oder etwas anderes."; // Oh dear - the page you requested could not be found! Try going back and clicking a different link. Or something else.
 $definitions["message.ajaxDisconnected"] = "Unable to communicate with the server. Wait a few seconds and <a href='javascript:jQuery.ETAjax.resumeAfterDisconnection()'>try again</a>, or <a href='' onclick='window.location.reload();return false'>refresh the page</a>.";
 $definitions["message.ajaxRequestPending"] = "Hey! We're still processing some of your stuff! If you navigate away from this page you might lose any recent changes you've made, so wait a few seconds, ok?";
 $definitions["message.avatarError"] = "There was a problem uploading your avatar. Make sure you're using a valid image type (like .jpg, .png, or .gif) and the file isn't really really huge.";
@@ -360,7 +360,7 @@ $definitions["message.emailConfirmed"] = "Cool! Your account has been validated 
 $definitions["message.emailDoesntExist"] = "That email address doesn't match any members in the database. Did you make a typo?";
 $definitions["message.emailNotYetConfirmed"] = "You need to confirm your email before you can log in with it! If you didn't receive the confirmation email, <a href='%s'>click here to get it sent again</a>.";
 $definitions["message.emailTaken"] = "Curses, there is already a member with this email!";
-$definitions["message.empty"] = "You must fill out this field.";
+$definitions["message.empty"] = "Du musst dieses Feld ausf&uuml;llen."; // You must fill out this field.
 $definitions["message.emptyPost"] = "Yeah... uh, you should probably type something in your post.";
 $definitions["message.emptyTitle"] = "The title of your conversation can't be blank. I mean, how can anyone click on a blank title? Think about it.";
 $definitions["message.esoTalkAlreadyInstalled"] = "<strong>esoTalk is already installed.</strong><br/><small>To reinstall esoTalk, you must remove <strong>config/config.php</strong>.</small>";
