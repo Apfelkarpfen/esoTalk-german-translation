@@ -1,7 +1,8 @@
 <?php
-// Copyright 2012 mic
-
-// German Definitions for the BBCode plugin.
+/*
+ * Copyright 2012 Micha Bartholome
+ * German Definitions for the BBCode plugin.
+ */
 
 $definitions["Fixed"] = "Absolut";
 $definitions["Image"] = "Grafik";
