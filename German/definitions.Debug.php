@@ -1,9 +1,10 @@
 <?php
-// Copyright 2011 mic
-// German Definitions for the Debug plugin.
+/*!
+ * Copyright 2012 Micha bartholome
+ * German Definitions for the Debug plugin.
+ */
 
-// Debugers should understand english
-$definitions["MySQL queries"] = "MySQL queries"; 
+$definitions["MySQL queries"] = "MySQL-Queries"; 
 $definitions["Page loaded in %s seconds"] = "Seite wurde in %s Sekunden geladen";
-$definitions["POST + GET + FILES information"] = "POST + GET + FILES information";
-$definitions["SESSION + COOKIE information"] = "SESSION + COOKIE information";
+$definitions["POST + GET + FILES information"] = "POST + GET + FILES Informationen";
+$definitions["SESSION + COOKIE information"] = "SESSION + COOKIE Informationen";
