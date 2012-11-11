@@ -458,19 +458,21 @@ $definitions["email.replyToStarred.body"] = "%1\$s has replied to a conversation
 $definitions["email.replyToStarred.subject"] = "There is a new reply to '%1\$s'";
 
 
-// Translating the gambit system can be quite complex, but we'll do our best to get you through it. :)
-// Note: Don't use any html entities in these definitions, except for: &lt; &gt; &amp; &#39;
+/**
+ * Translating the gambit system can be quite complex, but we'll do our best to get you through it. :)
+ * Note: Don't use any html entities in these definitions, except for: &lt; &gt; &amp; &#39;
 
-// Simple gambits
-// These gambits are pretty much evaluated as-they-are.
-// tag:, author:, contributor:, and quoted: are combined with a value after the colon (:).
-// For example: tag:video games, author:myself
+ * Simple gambits
+ * These gambits are pretty much evaluated as-they-are.
+ * tag:, author:, contributor:, and quoted: are combined with a value after the colon (:).
+ * For example: tag:video games, author:myself
+/*
 $definitions["gambit.author:"] = "autor:";
 $definitions["gambit.contributor:"] = "contributor:";
 $definitions["gambit.member"] = "mitglied";
 $definitions["gambit.myself"] = "myself";
 $definitions["gambit.draft"] = "entwurf";
-$definitions["gambit.has attachments"] = "hat &auml;nh&auml;nge";
+$definitions["gambit.has attachments"] = "hat Anhänge";
 $definitions["gambit.locked"] = "locked";
 $definitions["gambit.order by newest"] = "sortieren nach Neueste";
 $definitions["gambit.order by replies"] = "sortieren nach Antworten";
