@@ -1,5 +1,7 @@
 <?php
-// Copyright 2012 Micha Bartholome
+/*
+ * Copyright 2012 Micha Bartholome
+ */
 
 ET::$languageInfo["German"] = array(
 	"locale" => "de-DE",
@@ -15,7 +17,7 @@ $definitions["charset"] = "utf-8"; // I love UTF-8 just use entity for special c
 
 // Still need to fix ä by writting an extra and better escape function so we can use &auml;
 $definitions["date.months"] = array("Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez");
-$definitions["date.full"] = "j \\" . implode("\\", str_split($definitions["date.months"][(int)date("n")])) . " Y, G:i \G\M\TO"; // see http://php.net/manual/function.date.php for details
+$definitions["date.full"] = "j \\" . implode("\\", str_split($definitions["date.months"][(int)date("n") - 1])) . " Y, G:i \G\M\TO"; // see http://php.net/manual/function.date.php for details
 
 $definitions["%d day ago"] = "gestern"; // yesterday
 $definitions["%d days ago"] = "%d Tage her"; // %d days ago
