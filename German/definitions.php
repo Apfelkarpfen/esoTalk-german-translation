@@ -13,8 +13,9 @@ ET::$languageInfo["German"] = array(
 // Define the character set that this language uses.
 $definitions["charset"] = "utf-8"; // I love UTF-8 just use entity for special chars
 
-// Check where M is used in the code... so we can replace it with a german array
-$definitions["date.full"] = "j M Y, g:ia \G\M\TO"; // see http://au.php.net/manual/en/function.date.php for details
+// Still need to fix ä by writting an extra and better escape function so we can use &auml;
+$definitions["date.months"] = array("Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez");
+$definitions["date.full"] = "j \\" . implode("\\", str_split($definitions["date.months"][(int)date("n")])) . " Y, G:i \G\M\TO"; // see http://php.net/manual/function.date.php for details
 
 $definitions["%d day ago"] = "gestern"; // yesterday
 $definitions["%d days ago"] = "%d Tage her"; // %d days ago
