@@ -128,7 +128,7 @@ $definitions["Discard Draft"] = "Entwurf verwerfen";
 $definitions["Edit Channel"] = "Kanal editieren";
 $definitions["Edit Group"] = "Gruppe editieren";
 $definitions["Edit member groups"] = "Edit member groups";
-$definitions["Edit your profile"] = "Editiere dein Profil";
+$definitions["Edit your profile"] = "Editiere Dein Profil";
 $definitions["Edit"] = "Editieren";
 $definitions["Edited %s by %s"] = "Edited %s by %s";
 $definitions["Email me when I'm added to a private conversation"] = "Schicke mir eine E-Mail wenn ich zu einer privaten Konversation hinzugef&uuml;gt werde";
@@ -140,7 +140,7 @@ $definitions["Error"] = "Fehler";
 $definitions["esoTalk version"] = "esoTalk version";
 $definitions["Everyone"] = "Jeder";
 
-$definitions["Fatal Error"] = "Oh oh! Ein fataler Fehler...";
+$definitions["Fatal Error"] = "Oh je! Ein fataler Fehler...";
 $definitions["Feed"] = "Feed";
 $definitions["Filter by name or group..."] = "Filtern nach Name oder Gruppe ...";
 $definitions["Filter conversations..."] = "Konversationen filtern...";
@@ -342,13 +342,13 @@ $definitions["Your current password"] = "Dein jetziges Passwort";
 
 
 // Messages.
-$definitions["message.404"] = "Oh je - die von Ihnen angeforderte Seite konnte nicht gefunden werden! Versuchen Sie auf der vorherigen und auf einen anderen Link zu klicken. Oder etwas anderes."; // Oh dear - the page you requested could not be found! Try going back and clicking a different link. Or something else.
-$definitions["message.ajaxDisconnected"] = "Unable to communicate with the server. Wait a few seconds and <a href='javascript:jQuery.ETAjax.resumeAfterDisconnection()'>try again</a>, or <a href='' onclick='window.location.reload();return false'>refresh the page</a>.";
+$definitions["message.404"] = "Oh je - die von Ihnen angeforderte Seite konnte nicht gefunden werden! Versuchen Sie auf die vorherige Seite zur&uuml;ckzukehren und auf einen anderen Link zu klicken."; // Oh dear - the page you requested could not be found! Try going back and clicking a different link. Or something else.
+$definitions["message.ajaxDisconnected"] = "Kann nicht mit dem Server kommunizieren. Warten Sie ein paar Sekunden und <a href='javascript:jQuery.ETAjax.resumeAfterDisconnection()'>versuchen Sie es erneut</a> oder <a href='#reload' onclick='window.location.reload();return false'>aktualisieren Sie die Seite</a>."; // Unable to communicate with the server. Wait a few seconds and <a href='javascript:jQuery.ETAjax.resumeAfterDisconnection()'>try again</a>, or <a href='' onclick='window.location.reload();return false'>refresh the page</a>.
 $definitions["message.ajaxRequestPending"] = "Hey! We're still processing some of your stuff! If you navigate away from this page you might lose any recent changes you've made, so wait a few seconds, ok?";
-$definitions["message.avatarError"] = "There was a problem uploading your avatar. Make sure you're using a valid image type (like .jpg, .png, or .gif) and the file isn't really really huge.";
+$definitions["message.avatarError"] = "Es gab ein Problem beim hochladen von Deinem Avatar. Vergewissere Dich, dass Du einen g&uuml;ltigen Bild-Typ (wie .jpg, .png oder .gif) verwendest und die Datei nicht zu riesig ist."; // There was a problem uploading your avatar. Make sure you're using a valid image type (like .jpg, .png, or .gif) and the file isn't really really huge.
 $definitions["message.cannotDeleteLastChannel"] = "Hey, wait up, you can't delete the last channel! Where would your conversations go? That's just silly.";
-$definitions["message.changesSaved"] = "Your changes were saved.";
-$definitions["message.channelsHelp"] = "Channels are used to categorize conversations on your forum. You can create as many channels as needed, and rearrange/nest them by dragging and dropping below.";
+$definitions["message.changesSaved"] = "Deine &Auml;nderungen wurden gespeichert.";
+$definitions["message.channelsHelp"] = "Kan&auml;le werden verwendet, um Konversationen in Deinem Forum zu kategorisieren. Du kannst so viele Kan&auml;le wie erforderlich per Drag & Drop erstellen, neu anordnen und verschachteln."; //"Channels are used to categorize conversations on your forum. You can create as many channels as needed, and rearrange/nest them by dragging and dropping below.";
 $definitions["message.channelSlugTaken"] = "This slug is already in use by another channel.";
 $definitions["message.confirmDelete"] = "Are you sure you want to delete this? Seriously, you won't be able to get it back.";
 $definitions["message.confirmDiscardReply"] = "You have not saved your reply as a draft. Do you wish to discard it?";
@@ -465,7 +465,7 @@ $definitions["email.replyToStarred.subject"] = "There is a new reply to '%1\$s'"
  * These gambits are pretty much evaluated as-they-are.
  * tag:, author:, contributor:, and quoted: are combined with a value after the colon (:).
  * For example: tag:video games, author:myself
-/*
+*/
 $definitions["gambit.author:"] = "autor:";
 $definitions["gambit.contributor:"] = "contributor:";
 $definitions["gambit.member"] = "mitglied";
