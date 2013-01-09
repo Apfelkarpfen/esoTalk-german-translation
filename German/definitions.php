@@ -12,26 +12,29 @@ ET::$languageInfo["German"] = array(
 	"license" => "GPLv3"
 );
 
+date_default_timezone_set("Europe/Berlin");
+
 // Define the character set that this language uses.
 $definitions["charset"] = "utf-8"; // I love UTF-8 just use entity for special chars
 
 $definitions["date.months"] = array("Jan", "Feb", "M&auml;r", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez");
 $definitions["date.full"] = "j \\" . implode("\\", str_split($definitions["date.months"][(int)date("n") - 1])) . " Y, G:i \G\M\TO"; // see http://php.net/manual/function.date.php for details
 
-$definitions["%d day ago"] = "gestern"; // yesterday
-$definitions["%d days ago"] = "%d Tage her"; // %d days ago
-$definitions["%d hour ago"] = "1 Stunde her"; // 1 hour ago
-$definitions["%d hours ago"] = "%d Stunden her"; // %d hours ago
-$definitions["%d minute ago"] = "1 Minute her"; // 1 minute ago
-$definitions["%d minutes ago"] = "%d Minuten her"; // %d minutes ago
-$definitions["%d month ago"] = "1 Monat her"; // 1 month ago
-$definitions["%d months ago"] = "%d Monate her"; // %d months ago
-$definitions["%d second ago"] = "1 Sekunde her"; // 1 second ago
-$definitions["%d seconds ago"] = "%d Sekunden her"; // %d seconds ago
-$definitions["%d week ago"] = "letzte Woche"; // last week
-$definitions["%d weeks ago"] = "%d Wochen her"; // %d weeks ago
-$definitions["%d year ago"] = "letztes Jahr"; // last year
-$definitions["%d years ago"] = "%d Jahre her"; // %d years ago
+// &#8203; because I don't want first letter uppercase
+$definitions["%d day ago"] = "&#8203;gestern"; // yesterday
+$definitions["%d days ago"] = "&#8203;vor %d Tagen"; // %d days ago
+$definitions["%d hour ago"] = "&#8203;vor einer Stunde"; // 1 hour ago
+$definitions["%d hours ago"] = "&#8203;vor %d Stunden"; // %d hours ago
+$definitions["%d minute ago"] = "&#8203;vor einer Minute"; // 1 minute ago
+$definitions["%d minutes ago"] = "&#8203;vor %d Minuten"; // %d minutes ago
+$definitions["%d month ago"] = "&#8203;vor einem Monat"; // 1 month ago
+$definitions["%d months ago"] = "&#8203;vor %d Monaten"; // %d months ago
+$definitions["%d second ago"] = "&#8203;vor einer Sekunde"; // 1 second ago
+$definitions["%d seconds ago"] = "vor %d Sekunden"; // %d seconds ago
+$definitions["%d week ago"] = "&#8203;vor einer Woche"; // last week
+$definitions["%d weeks ago"] = "&#8203;vor %d Wochen"; // %d weeks ago
+$definitions["%d year ago"] = "&#8203;vor einem Jahr"; // last year
+$definitions["%d years ago"] = "&#8203;vor %d Jahren"; // %d years ago
 
 $definitions["%s and %s"] = "%s und %s";
 $definitions["%s can view this conversation."] = "%s kann diese Konversation betrachten.";
@@ -42,16 +45,16 @@ $definitions["%s conversations"] = "%s Konversationen";
 $definitions["%s invited you to %s."] = "%s hat Dich eingeladen zu %s.";
 $definitions["%s joined the forum."] = "%s ist dem Forum beigetreten.";
 $definitions["%s post"] = "%s Beitrag";
-$definitions["%s posted %s"] = "%s posted %s";
-$definitions["%s posted in %s."] = "%s posted in %s.";
+$definitions["%s posted %s"] = "%s gesendet %s";
+$definitions["%s posted in %s."] = "%s gesendet in %s.";
 $definitions["%s posts"] = "%s Beitr&auml;ge";
 $definitions["%s reply"] = "%s Antwort";
 $definitions["%s replies"] = "%s Antworten";
 $definitions["%s Settings"] = "%s Einstellungen";
 $definitions["%s started the conversation %s."] = "%s hat die Konversation %s begonnen.";
 $definitions["%s tagged you in a post."] = "%s hat dich in einem Beitrag erw&auml;hnt.";
-$definitions["%s will be able to view this conversation."] = "%s wird in der Lage sein, diese Konversation zu sehen.";
-$definitions["%s will be able to:"] = "%s wird in der Lage sein:";
+$definitions["%s will be able to view this conversation."] = "%s werden in der Lage sein, diese Konversation zu sehen.";
+$definitions["%s will be able to:"] = "%s werden in der Lage sein:";
 
 $definitions["A new version of esoTalk (%s) is available."] = "Eine neue Version von esoTalk (%s) ist verf&uuml;gbar.";
 $definitions["a private conversation"] = "eine private Konversation";
@@ -96,10 +99,9 @@ $definitions["Channel title"] = "Kanaltitel";
 $definitions["Channel slug"] = "Channel slug";
 $definitions["Channels"] = "Kan&auml;le";
 $definitions["Choose a secure password of at least %s characters"] = "W&auml;hle ein sicheres Passwort aus mindestens %s Zeichen";
-$definitions["Choose what people will see when they first visit your forum."] = "Choose what people will see when they first visit your forum.";
+$definitions["Choose what people will see when they first visit your forum."] = "W&auml;hle aus, was den Leute angezeigt wird, wenn sie Dein Forum besuchen.";
 $definitions["Click on a member's name to remove them."] = "Klick auf den Namen eines Mitglieds, um ihn zu entfernen.";
-$definitions["Close registration"] = "Close registration";
-$definitions["Confirm password"] = "Passwort best&auml;tigen";
+$definitions["Close registration"] = "Registrierung schlie&szlig;en";
 $definitions["Context"] = "Zusammenhang";
 $definitions["Controls"] = "Steuerung";
 $definitions["Conversation"] = "Konversation";
@@ -110,7 +112,7 @@ $definitions["Copy permissions from"] = "Kopiere Berechtigungen von";
 $definitions["Create Channel"] = "Kanal erstellen";
 $definitions["Create Group"] = "Gruppe erstellen";
 $definitions["Create Member"] = "Mitglied hinzuf&uuml;gen";
-$definitions["Customize how users can become members of your forum."] = "Customize how users can become members of your forum.";
+$definitions["Customize how users can become members of your forum."] = "Stelle ein wie Benutzer Mitglieder werden k&ouml;nnen.";
 
 $definitions["Dashboard"] = "Dashboard";
 $definitions["Default forum language"] = "Standard Forum Sprache";
@@ -135,7 +137,7 @@ $definitions["Email me when I'm added to a private conversation"] = "Schicke mir
 $definitions["Email me when someone posts in a conversation I have starred"] = "Email me when someone posts in a conversation I have followed";
 $definitions["Email"] = "E-Mail";
 $definitions["Enable"] = "Aktivieren";
-$definitions["Enter a conversation title"] = "Gib einen Titel f&uuml;r diese Konversation ein";
+$definitions["Enter a conversation title"] = "Gib einen Titel für diese Konversation ein";
 $definitions["Error"] = "Fehler";
 $definitions["esoTalk version"] = "esoTalk Version";
 $definitions["Everyone"] = "Jeder";
@@ -161,7 +163,7 @@ $definitions["Group name"] = "Gruppenname";
 $definitions["group.administrator"] = "Administrator";
 $definitions["group.administrator.plural"] = "Administratoren";
 $definitions["group.guest"] = "Gast";
-$definitions["group.guest.plural"] = "G&auml;ste";
+$definitions["group.guest.plural"] = "Gäste";
 $definitions["group.member"] = "Mitglied";
 $definitions["group.member.plural"] = "Mitglieder";
 $definitions["group.Moderator"] = "Moderator";
@@ -223,14 +225,14 @@ $definitions["MySQL password"] = "MySQL password";
 $definitions["MySQL queries"] = "MySQL queries";
 $definitions["MySQL table prefix"] = "MySQL table prefix";
 $definitions["MySQL username"] = "MySQL username";
-$definitions["MySQL version"] = "MySQL version";
+$definitions["MySQL version"] = "MySQL Version";
 
 $definitions["Name"] = "Name";
 $definitions["never"] = "nie";
 $definitions["New Conversation"] = "Neue Konversation";
 $definitions["New conversations in the past week"] = "Neue Konversationen in der letzten Woche.";
 $definitions["New email"] = "Neue E-Mail";
-$definitions["New members in the past week"] = "Neue Mitglieder in der letzten Woche.";
+$definitions["New members in the past week"] = "Neue Mitglieder in der letzten Woche";
 $definitions["New password"] = "Neues Passwort";
 $definitions["New posts in the past week"] = "New posts in the past week";
 $definitions["New username"] = "Neuer Nutzername";
@@ -251,7 +253,7 @@ $definitions["Original Post"] = "Urspr&uuml;nglicher Beitrag";
 
 $definitions["Page Not Found"] = "Seite nicht gefunden";
 $definitions["Password"] = "Passwort";
-$definitions["PHP version"] = "PHP version";
+$definitions["PHP version"] = "PHP Version";
 $definitions["Plugins"] = "Plugins";
 $definitions["Post a Reply"] = "Schreibe eine Antwort";
 $definitions["Post count"] = "Anzahl Beitr&auml;ge";
@@ -269,7 +271,7 @@ $definitions["Remove avatar"] = "Avatar entfernen";
 $definitions["Rename Member"] = "Mitglied umbenennen";
 $definitions["Reply"] = "Antworten";
 $definitions["Report a bug"] = "Einen Fehler melden";
-$definitions["Require users to confirm their email address"] = "Von den Benutzern verlangen ihre E-Mail Adresse zu bestätigen";
+$definitions["Require users to confirm their email address"] = "Die Benutzer m&uuml;&szlig;en ihre E-Mail Adresse bestätigen";
 $definitions["restore"] = "wiederherstellen";
 
 $definitions["Save Changes"] = "&Auml;nderungen speichern";
@@ -368,8 +370,8 @@ $definitions["message.emptyTitle"] = "The title of your conversation can't be bl
 $definitions["message.esoTalkAlreadyInstalled"] = "<strong>esoTalk is already installed.</strong><br/><small>To reinstall esoTalk, you must remove <strong>config/config.php</strong>.</small>";
 $definitions["message.esoTalkUpdateAvailable"] = "A new version of esoTalk, %s, is now available.";
 $definitions["message.esoTalkUpdateAvailableHelp"] = "It's recommended to always have the latest version of esoTalk installed to reduce security risk. And hey, there might be some cool new features!";
-$definitions["message.esoTalkUpToDate"] = "Your version of esoTalk is up-to-date.";
-$definitions["message.esoTalkUpToDateHelp"] = "I'm a poor college student who has spent many hundreds of hours developing esoTalk. If you like it, please consider <a href='%s' target='_blank'>donating</a>.";
+$definitions["message.esoTalkUpToDate"] = "Deine esoTalk Version ist auf dem neusten Stand."; // Your version of esoTalk is up-to-date.
+$definitions["message.esoTalkUpToDateHelp"] = "Ich bin ein armer Student, der mehrere hunderte von Stunden verbracht hat um esoTalk zu entwickeln. Wenn es Dir gef&auml;llt w&auml;re es nett wenn Du mir etwas <a href='%s' target='_blank'>spendest</a>."; // I'm a poor college student who has spent many hundreds of hours developing esoTalk. If you like it, please consider <a href='%s' target='_blank'>donating</a>.
 $definitions["message.fatalError"] = "<p>esoTalk has encountered an nasty error which is making it impossible to do whatever it is that you're doing. But don't feel down - <strong>here are a few things you can try</strong>:</p>\n<ul>\n<li>Go outside, walk the dog, have a coffee... then <strong><a href='%1\$s'>try again</a></strong>!</li>\n<li>If you are the forum administrator, then you can <strong>get help on the <a href='%2\$s'>esoTalk website</a></strong>.</li>\n<li>Try hitting the computer - that sometimes works for me.</li>\n</ul>";
 $definitions["message.fatalErrorInstaller"] = "<p>esoTalk has encountered an nasty error which is making it impossible to do whatever it is that you're doing. But don't feel down - <strong>here are a few things you can try</strong>:</p>\n<ul>\n<li><p><strong>Try again.</strong> Everyone makes mistakes - maybe the computer made one this time!</p></li>\n<li><p><strong>Go back and check your settings.</strong> In particular, make sure your database information is correct.</p></li>\n<li><p><strong>Get help.</strong> Go on the <a href='%s'>esoTalk support forum</a> and search to see if anyone else is having the same problem as you are. If not, start a new conversation about your problem, including the error details below.</p></li>\n</ul>";
 $definitions["message.fatalErrorUpgrader"] = "<p>esoTalk has encountered an nasty error which is making it impossible to do whatever it is that you're doing. But don't feel down - <strong>here are a few things you can try</strong>:</p>\n<ul>\n<li><p><strong>Try again.</strong> Everyone makes mistakes - maybe the computer made one this time!</p></li>\n<li><p><strong>Get help.</strong> Go on the <a href='%s'>esoTalk support forum</a> and search to see if anyone else is having the same problem as you are. If not, start a new conversation about your problem, including the error details below.</p></li>\n</ul>";
@@ -467,20 +469,20 @@ $definitions["email.replyToStarred.subject"] = "There is a new reply to '%1\$s'"
  * For example: tag:video games, author:myself
 */
 $definitions["gambit.author:"] = "autor:";
-$definitions["gambit.contributor:"] = "contributor:";
+$definitions["gambit.contributor:"] = "mitwirkender:";
 $definitions["gambit.member"] = "mitglied";
-$definitions["gambit.myself"] = "myself";
+$definitions["gambit.myself"] = "ich selbst";
 $definitions["gambit.draft"] = "entwurf";
 $definitions["gambit.has attachments"] = "hat Anhänge";
-$definitions["gambit.locked"] = "locked";
+$definitions["gambit.locked"] = "geschlossen";
 $definitions["gambit.order by newest"] = "sortieren nach Neueste";
 $definitions["gambit.order by replies"] = "sortieren nach Antworten";
 $definitions["gambit.private"] = "privat";
-$definitions["gambit.random"] = "random";
-$definitions["gambit.reverse"] = "reverse";
+$definitions["gambit.random"] = "zufällig";
+$definitions["gambit.reverse"] = "sortierung umdrehen";
 $definitions["gambit.starred"] = "gefolgt"; // followed
-$definitions["gambit.muted"] = "muted";
-$definitions["gambit.sticky"] = "sticky";
+$definitions["gambit.muted"] = "stummgeschaltet";
+$definitions["gambit.sticky"] = "angeheftet";
 $definitions["gambit.unread"] = "ungelesen";
 $definitions["gambit.more results"] = "mehr Ergebnisse";
 
@@ -489,7 +491,7 @@ $definitions["gambit.more results"] = "mehr Ergebnisse";
 // In other words, when you type "active today", the gambit system interprets it as if you typed "active 1 day".
 // The first of each pair, the alias, can be anything you want.
 // The second, however, must fit with the regular expression pattern defined below (more on that later.)
-$definitions["gambit.active today"] = "active today"; // what appears in the gambit cloud
+$definitions["gambit.active today"] = "heute aktiv"; // what appears in the gambit cloud
 $definitions["gambit.active 1 day"] = "active 1 day"; // what it actually evaluates to
 
 $definitions["gambit.has replies"] = "hat Antworten";
@@ -500,7 +502,7 @@ $definitions["gambit.has no replies"] = "hat keine Antworten";
 $definitions["gambit.has 0 replies"] = "hat 0 Antworten";
 
 $definitions["gambit.dead"] = "tot";
-$definitions["gambit.active >30 day"] = "active >30 day";
+$definitions["gambit.active >30 day"] = "aktiv >30 tage";
 
 // Units of time
 // These are used in the active gambit.
@@ -512,8 +514,8 @@ $definitions["gambit.day"] = "tag";
 $definitions["gambit.week"] = "woche";
 $definitions["gambit.month"] = "monat";
 $definitions["gambit.year"] = "jahr";
-$definitions["gambit.last"] = "last"; // as in "active last 180 days"
-$definitions["gambit.active"] = "active"; // as in "active last 180 days"
+$definitions["gambit.last"] = "letzten"; // as in "active last 180 days"
+$definitions["gambit.active"] = "aktiv"; // as in "active last 180 days"
 
 // Now the hard bit. This is a regular expression to test for the "active" gambit.
 // The group (?<a> ... ) is the comparison operator (>, <, >=, <=, or last).
@@ -521,12 +523,12 @@ $definitions["gambit.active"] = "active"; // as in "active last 180 days"
 // The group (?<c> ... ) is the unit of time.
 // The languages of "last" and the units of time are defined above.
 // However, if you need to reorder the groups, do so carefully, and make sure spaces are written as " *".
-$definitions["gambit.gambitActive"] = "/^{$definitions["gambit.active"]} *(?<a>>|<|>=|<=|{$definitions["gambit.last"]})? *(?<b>\d+) *(?<c>{$definitions["gambit.second"]}|{$definitions["gambit.minute"]}|{$definitions["gambit.hour"]}|{$definitions["gambit.day"]}|{$definitions["gambit.week"]}|{$definitions["gambit.month"]}|{$definitions["gambit.year"]})/";
+$definitions["gambit.gambitActive"] = "/^*(?<a>>|<|>=|<=|{$definitions["gambit.last"]})? *(?<b>\d+) *(?<c>{$definitions["gambit.second"]}|{$definitions["gambit.minute"]}|{$definitions["gambit.hour"]}|{$definitions["gambit.day"]}|{$definitions["gambit.week"]}|{$definitions["gambit.month"]}|{$definitions["gambit.year"]}). {$definitions["gambit.active"]}/";
 
 // These appear in the tag cloud. They must fit the regular expression pattern where the ? is a number.
 // If the regular expression pattern has been reordered, these gambits must also be reordered (as well as the ones in aliases.)
-$definitions["gambit.active last ? hours"] = "{$definitions["gambit.active"]} {$definitions["gambit.last"]} ? {$definitions["gambit.hour"]}s";
-$definitions["gambit.active last ? days"] = "{$definitions["gambit.active"]} {$definitions["gambit.last"]} ? {$definitions["gambit.day"]}s";
+$definitions["gambit.active last ? hours"] = "{$definitions["gambit.last"]} ? {$definitions["gambit.hour"]}n {$definitions["gambit.active"]}";
+$definitions["gambit.active last ? days"] = "{$definitions["gambit.last"]} ? {$definitions["gambit.day"]}e {$definitions["gambit.active"]}";
 
 // This is similar to the regular expression for the active gambit, but for the "has n reply(s)" gambit.
 // Usually you just need to change the "has" and "repl".

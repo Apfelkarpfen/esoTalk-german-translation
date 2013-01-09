@@ -4,10 +4,10 @@
  * German Definitions for the BBCode plugin.
  */
 
-$definitions["Fixed"] = "Absolut";
-$definitions["Image"] = "Grafik";
+$definitions["Fixed"] = "Fixiert";
+$definitions["Image"] = "Bild";
 $definitions["Link"] = "Link";
-$definitions["Strike"] = "Durchgestrichen";
+$definitions["Strike"] = "Durchstreichen";
 $definitions["Header"] = "&Uuml;berschrift";
 $definitions["Italic"] = "Kursiv";
 $definitions["Bold"] = "Fett";
